@@ -1,14 +1,79 @@
+:root {
+  --highlight-colour: #e1ff55;
+  --primary-colour: #011020;
+  --heading-font: "Syncopate", sans-serif;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: white;
+  background-color: var(--primary-colour);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Syncopate", sans-serif;
+  font-family: var(--heading-font);
 }
 
 h1 {
   font-size: 64px;
+  margin: 0 0 12px 0;
+  line-height: 80%;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 0 24px 0;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+button {
+  background-color: var(--highlight-colour);
+  color: var(--primary-colour);
+  border-radius: 12px;
+  padding: 16px 24px;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+button:hover {
+  background-color: #b3ce37;
+}
+
+.highlight-text {
+  color: var(--highlight-colour);
+}
+
+.hero {
+  background-image: url(/images/hero-image.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.hero-container {
+  max-width: 800px;
+  margin: 0 12px;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 40px;
+  }
 }
