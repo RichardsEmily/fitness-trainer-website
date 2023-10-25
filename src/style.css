@@ -219,6 +219,7 @@ main {
   width: 200px;
   aspect-ratio: 1 / 1;
   border-radius: 12px;
+  filter: brightness(1);
 }
 
 .testimonial h4 {
