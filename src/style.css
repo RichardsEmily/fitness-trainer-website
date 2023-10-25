@@ -287,6 +287,10 @@ main {
     margin: 80px 0 0 0;
   }
 
+  .overview-text {
+    text-align: left;
+  }
+
   .program-description {
     height: 300px;
   }
